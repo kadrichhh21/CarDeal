@@ -1,0 +1,164 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.root {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.navbar-text {
+    height: 100%;
+    width: 25%;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.cart {
+    display: flex;
+    width: 25%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cartButton {
+    height: 20px;
+    width: 30%;
+    display: flex;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    width: 25%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.menuButton {
+    height: 20px;
+    width: 30%;
+    display: flex;
+}
+
+.profile{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileButton {
+    height: 20px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    font-size: 25px;
+    font-family: sans-serif;
+    padding: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.header1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content-cars-image {
+    width: 125px;
+    height: 75px;
+}
+
+.footer {
+    height: 200px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.info {
+    display: flex;
+    font-size: 22px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+.column {
+    float: left;
+    width: 21%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+}
+  
+.containerTab {
+    padding: 20px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+.closebtn {
+    float: right;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}

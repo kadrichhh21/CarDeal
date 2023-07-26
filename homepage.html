@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | CAR SHOP "CarDeal"</title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+    <div class="root">
+        <div class="navbar">
+            <div class="header2">
+                <div>CarDeal</div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Menu</button>
+                <div class="dropdown-content">
+                  <a href="file:///C:/Users/nejra/OneDrive/Radna%20povr%C5%A1ina/Zavr%C5%A1ni%20rad/Audi%20page/audipage.html">Audi</a>
+                  <a href="file:///C:/Users/nejra/OneDrive/Radna%20povr%C5%A1ina/Zavr%C5%A1ni%20rad/BMW%20page/bmwpage.html">BMW</a>
+                  <a href="file:///C:/Users/nejra/Onerve/Radna%20povr%C5%A1ina/Zavr%C5%A1ni%20rad/Mercedes%20page/mercedespage.html">Mercedes</a>
+                </div>""
+            </div>
+            <div class="profile">
+                <button><a href="../login/login.html">Login</a></button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="header">
+                <div class="header1">
+                    Savremeni automobili. Savremena oprema. Pregledajte izabranu ponudu, te ostatak
+                    <br>
+                    automobila koje nudimo i sami se uvjerite.
+                    <br>
+                    Vaš CarDeal.
+                </div>
+            </div>
+            <div class="column" onclick="openTab('b1');" style="background: grey;">
+                <img class="content-cars-image" src="https://file.kelleybluebookimages.com/kbb/base/evox/CP/13929/2020-BMW-M5-front_13929_032_2400x1800_300.png">
+                <div>
+                    BMW M5
+                </div>
+            </div>
+            <div class="column" onclick="openTab('b2');" style="background: grey;">
+                <img class="content-cars-image" src="https://www.telegraph.co.uk/content/dam/cars/2019/08/16/bmw-3-F34-action-main_trans_NvBQzQNjv4BqYwNsr-tpdP_qSne7HAuQZDR1g49vIIgjMcnZy4tdJfE.jpg">
+                <br>
+                <div>
+                    BMW 320i
+                </div>
+            </div>
+            <div class="column" onclick="openTab('b3');" style="background: grey;">
+                <img class="content-cars-image" src="https://www.automobili.ba/wp-content/uploads/2019/06/audi-a6-allroad-quattro-29.jpg">
+                <div>
+                    Audi A6 Quattro
+                </div>
+            </div>
+            <div class="column" onclick="openTab('b4');" style="background: grey;">
+                <img class="content-cars-image" src="https://supercarblondie.com/wp-content/uploads/Mercedes-AMG-G-63-Edition-55-white.jpg">
+                Mercedes
+                <br>
+                AMG G 63
+            </div>
+        </div>
+        <div id="b1" class="containerTab" style="display:none;background: grey">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+            <h2>BMW M5</h2>
+            <p>
+                Godište: 2018
+                <br>
+                Konjske snage: 200
+                <br>
+                Kubikaža: 1.9
+                <br>
+                Gorivo: dizel
+                <br>
+                Broj vrata: 4/5
+                <br>
+                Transmisija: Automatik
+                <br>
+                Cijena: 95.000 KM
+            </p>
+          </div>
+          
+          <div id="b2" class="containerTab" style="display:none;background:grey">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+            <h2>BMW 320i</h2>
+            <p>
+                Godište: 2020
+                <br>
+                Konjske snage: 160
+                <br>
+                Kubikaža: 1.6
+                <br>
+                Gorivo: dizel
+                <br>
+                Broj vrata: 4/5
+                <br>
+                Transmisija: Manuelni
+                <br>
+                Cijena: 89.000 KM
+            </p>
+          </div>
+          
+          <div id="b3" class="containerTab" style="display:none;background:grey">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+            <h2>Audi A6 Quattro</h2>
+            <p>
+                Godište: 2019
+                <br>
+                Konjske snage: 180
+                <br>
+                Kubikaža: 1.7
+                <br>
+                Gorivo: dizel
+                <br>
+                Broj vrata: 2/3
+                <br>
+                Transmisija: Automatik
+                <br>
+                Cijena: 73.000 KM
+            </p>
+          </div>
+
+          <div id="b4" class="containerTab" style="display:none;background:grey">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+            <h2>Mercedes AMG G 63</h2>
+            <p>
+                Godište: 2023
+                <br>
+                Konjske snage: 175
+                <br>
+                Kubikaža: 1.8
+                <br>
+                Gorivo: dizel
+                <br>
+                Broj vrata: 4/5
+                <br>
+                Transmisija: Manuelni
+                <br>
+                Cijena: 80.000 KM
+            </p>
+          </div>
+        <div class="footer">
+            <div class="info">
+                cardeal@gmail.com
+                <br>
+                @cardeal
+                <br>
+                +38733999888
+                <br>
+                Zmaja od Bosne 26, Sarajevo
+            </div>
+        </div>
+    </div>
+    <script src="homepage.js"></script>
+</body>
+</html>
