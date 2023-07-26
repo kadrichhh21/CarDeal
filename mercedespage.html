@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarDeal | Mercedes</title>
+    <link rel="stylesheet" href="mercedespage.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbarText">
+            CarDeal
+            <br>
+            Mercedes
+        </div>
+    </div>
+    <div class="row">
+        <div class="header">
+            <div class="header1">
+                Sa ovakvom ponudom Audi automobila smo jako ponosni. Svaki automobil sadrži full opremu.
+            </div>
+        </div>
+        <div class="column" onclick="openTab('b1');" style="background: grey;">
+            <img class="content-cars-image" src="https://supercarblondie.com/wp-content/uploads/Mercedes-AMG-G-63-Edition-55-white.jpg">
+            <div>
+                Mercedes AMG G 63
+            </div>
+        </div>
+        <div class="column" onclick="openTab('b2');" style="background: grey;">
+            <img class="content-cars-image" src="https://www.motortrend.com/uploads/2023/01/2023-Mercedes-Benz-AMG-GT63-4-Door-Coupe-1.jpg">
+            <div>
+                Mercedes AMG GT
+            </div>
+        </div>
+        <div class="column" onclick="openTab('b3');" style="background: grey;">
+            <img class="content-cars-image" src="https://www.mercedes-benz.ba/content/dam/hq/passengercars/cars/gle/gle-suv-v167-fl-pi/modeloverview/01-2023/images/mercedes-benz-gle-suv-v167-modeloverview-696x392-01-2023.png">
+            <div>
+                Mercedes-Benz GLE
+            </div>
+        </div>
+        <div class="column" onclick="openTab('b4');" style="background: grey;">
+            <img class="content-cars-image" src="data:image/jpeg;base64,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">
+            <div>
+                Mercedes C klasa
+            </div>
+        </div>
+    </div>
+    <div id="b1" class="containerTab" style="display:none;background: grey">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h2>Mercedes AMG G 63</h2>
+        <p>
+            Godište: 2018
+            <br>
+            Konjske snage: 220
+            <br>
+            Kubikaža: 1.9
+            <br>
+            Gorivo: dizel
+            <br>
+            Broj vrata: 4/5
+            <br>
+            Transmisija: Automatik
+            <br>
+            Cijena: 80.000 KM
+        </p>
+      </div>
+      
+      <div id="b2" class="containerTab" style="display:none;background:grey">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h2>Mercedes AMG GT</h2>
+        <p>
+            Godište: 2023
+            <br>
+            Konjske snage: 190
+            <br>
+            Kubikaža: 1.8
+            <br>
+            Gorivo: dizel
+            <br>
+            Broj vrata: 4/5
+            <br>
+            Transmisija: Manuelni
+            <br>
+            Cijena: 79.000 KM
+        </p>
+      </div>
+      
+      <div id="b3" class="containerTab" style="display:none;background:grey">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h2>Mercedes-Benz GLE</h2>
+        <p>
+            Godište: 2019
+            <br>
+            Konjske snage: 180
+            <br>
+            Kubikaža: 1.7
+            <br>
+            Gorivo: dizel
+            <br>
+            Broj vrata: 4/5
+            <br>
+            Transmisija: Automatik
+            <br>
+            Cijena: 76.000 KM
+        </p>
+      </div>
+
+      <div id="b4" class="containerTab" style="display:none;background:grey">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h2>Mercedes C klasa</h2>
+        <p>
+            Godište: 2023
+            <br>
+            Konjske snage: 175
+            <br>
+            Kubikaža: 1.8
+            <br>
+            Gorivo: dizel
+            <br>
+            Broj vrata: 4/5
+            <br>
+            Transmisija: Manuelni
+            <br>
+            Cijena: 91.000 KM
+        </p>
+      </div>
+    <div class="footer">
+        <div class="info">
+            cardeal@gmail.com
+            <br>
+            @cardeal
+            <br>
+            +38733999888
+            <br>
+            Zmaja od Bosne 26, Sarajevo
+        </div>
+    </div>
+    <script src="mercedespage.js"></script>
+</body>
+</html>

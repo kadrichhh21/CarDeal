@@ -1,0 +1,174 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.root {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.header2 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    font-size: 35px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.profile{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileButton {
+    height: 20px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    font-size: 25px;
+    font-family: sans-serif;
+    padding: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.header1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content-cars-image {
+    width: 125px;
+    height: 75px;
+}
+
+.footer {
+    height: 200px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.info {
+    display: flex;
+    font-size: 22px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+.column {
+    float: left;
+    width: 21%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+}
+  
+.containerTab {
+    padding: 20px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+.closebtn {
+    float: right;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
