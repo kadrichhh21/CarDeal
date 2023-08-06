@@ -55,23 +55,41 @@ function registerUser(
   //username , email
   const sqlInsertRegister =
     "INSERT INTO users (name,surname,username,password,email) VALUES (?,?,?,?,?)";
-  const promise = connection
-    .promise()
-    .query(sqlInsertRegister, [
-      nameInput,
-      surnameInput,
-      usernameInput,
-      hashedPassword,
-      emailInput,
-    ]);
-  promise
-    .then(() => {
-      response.status(201).json({ message: "Uspješno registrovan korisnik" });
-    })
-    .catch((error) => {
-      response.status(500).json({ message: `Reason ${error}` });
-    });
+    const promise = connection
+      .query(sqlInsertRegister, [
+        nameInput,
+        surnameInput,
+        usernameInput,
+        hashedPassword,
+        emailInput,
+      ]);
 }
+
+app.post("/users", callbackOnPost);
+
+function callbackOnPost(req, resp) {
+  console.log(req.body);
+  const { name, surname, username, password } = req.body;
+  const sqlInsert =
+    "INSERT INTO users (name,surname,username,password) VALUES (?,?,?,?)";
+  connection.query(
+    sqlInsert,
+    [name, surname, username, password],
+    callbackOnInsert
+  );
+  function callbackOnInsert(error, result) {
+    if (error) {
+      resp.status(500).json({
+        error: `Došlo je do greške prilikom interakcije s bazom ${error}`,
+      });
+      return;
+    }
+    resp.status(201).json({
+      message: "Korisnik je kreiran",
+    });
+  }
+}
+
 
 //LOGIN /api/login
 app.post("/api/login", callbackOnLogin);
